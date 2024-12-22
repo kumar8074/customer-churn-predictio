@@ -25,6 +25,14 @@
 
 - The flask app could have been implemented in such a way that we could have created seperate text feilds for each feature but i took the liberty to implement it like this for ease of use.
 
+- Incase you want to test components individually Run:
+   - python test_components.py
+   For testing pipelines individually Run:
+   - python test_train_pipeline.py
+   - python test_predict_pipeline.py
+
+- NOTE That the detailed explanation of everything is present in jupyter notebook at `Notebooks/customer_churn_prediction.ipynb`
+
 
 ### Important Note
-Dear Evaluator testing ML projects could be tedeous you need to create environments, download libraries, run a bunch of commands etc.,etc., Hence i wanted to make your job easier by containarizing application and then pulishing the image on `DockerHub` so that you can easily just pull the image and run it to test if application is working fine or not. However i had a very little time as my end semester exams are going on so i was just working on this project whenever i got free time so unfortunately i couldn't complete it. So yeah it's still work in progress...and ignore the DockerFiles 
+Dear Evaluator testing ML projects could be tedeous you need to create environments, download libraries, run a bunch of commands etc.,etc., Hence i wanted to make your job easier by containarizing application and then pulishing the image on `DockerHub` so that you can easily just pull the image and run it to test if application is working fine or not. However i had a very little time as my end semester exams are going on so i was just working on this project whenever i got free time so unfortunately i couldn't complete it. So yeah it's still work in progress...so please ignore the DockerFiles 
