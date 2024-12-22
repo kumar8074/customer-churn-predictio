@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mlflow:
+    build: .
+    ports:
+      - "5002:5000"
+    command: mlflow ui --host 0.0.0.0 --port 5000
+
+  training:
+    build: .
+    command: python src/pipeline/train_pipeline.py
+
+  flask:
+    build: .
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mlflow
+      - training
+    command: ./start.sh
